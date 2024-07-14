@@ -1,3 +1,3 @@
-# Derivate
+# Derivates
 
-Appunti sulle derivate scritti da me. Spero possiamo farne un uso sapiente
+Simple notes written by me in elegant(i hope) LaTeX
