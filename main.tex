@@ -537,7 +537,7 @@ $$
 $$
 La dimostrazione è dunque conclusa.
 \end{myproof}
-\par\noindent\smallskip Possiamo dimostrare in maniera analoga la derivata della funzione $\arccos(x)$, per questo lo darò come esercizio al lettore :)... Ovviamente scherzo!!! O forse no... \newpage
+\par\noindent\smallskip Possiamo dimostrare in maniera analoga la derivata della funzione $\arccos(x)$,
 \thm{Derivata della funzione $\arccos(x)$}{Sia $f(x)$ una funzione definita in un intervallo $[a;b]$ la cui espressione analitica risulta essere $f(x)=\arccos(x)$. La derivata di $f$ risulta essere:
 $$
 	f'(x) = -\frac{1}{\sqrt{1-x^2}}
@@ -554,7 +554,7 @@ $$
 $$
 La tesi è dunque dimostrata
 \end{myproof}
-Infine, possiamo servirci di questo incredibile risultato per determinare la derivata della funzione $\arctan(x)$:
+Infine, possiamo determinare la derivata della funzione $\arctan(x)$:
 \thm{Derivata della funzione $\arctan(x)$}{Sia $f$ una funzione definita in un intervallo $[a;b]$ la cui espressione analitica risulta essere $f(x)=\arctan(x)$. La derivata risulta essere:
 $$
 f'(x) = \frac{1}{1+x^2}
@@ -567,12 +567,12 @@ $$
 $$
 Ricordiamo che $\frac{d}{dx} \tan(x) = \frac{D[\sin(x)]\cos(x) - \sin(x)D[\cos(x)]}{\cos^2(x)} = \frac{\cos^2(x) - (-\sin^2(x))}{\cos^2(x)} = \frac{\sin^2(x) + \cos^2(x)}{\cos^2(x)} = \frac{1}{\cos^2(x)}$, quindi:
 $$
-	\frac{d}{dx}[\arctan(x)] = \frac{1}{\frac{d}{dy} \tan(y)} = \frac{1}{\frac{1}{cos^2(y)}} = \frac{1}{\frac{\cos^2(y) + \sin^2(y)}{\cos^2(y)}} = \frac{1}{1 + \tan^2(y)} = \frac{1}{1+x^2}
+	\frac{d}{dx}[\arctan(x)] = \frac{1}{\frac{d}{dy} \tan(y)} = \frac{1}{\frac{1}{\cos^2(y)}} = \frac{1}{\frac{\cos^2(y) + \sin^2(y)}{\cos^2(y)}} = \frac{1}{1 + \tan^2(y)} = \frac{1}{1+x^2}
 $$
 L'ultimo passaggio deriva da considerazione analoghe a quelle effettuate nella dimostrazione dell'arcoseno e dell'arcocoseno. La tesi è dunque dimostrata
 \end{myproof}
 \chapter{Teoremi sulle derivate}
-I teoremi sulle derivate sono molto importanti, in quanti molti di questi consentono di ampliare una serie di considerazioni sulle funzioni continue nei casi in cui questi risultino anche derivabili e, soprattutto, hanno applicazioni di per sé molto sorprendenti, come ad esempio dimostrare che, in un dato intervallo $[a;b]$, la funzione si annulla in un unico punto $x_0 \in [a;b]$ 
+I teoremi sulle derivate sono molto importanti, in quanti molti di questi consentono di fornirci una serie di strumenti che ci permetteranno di studiare le funzioni, individuando massimi, minimi ma anche intervalli di crescente e decrescenza, a patto che siano derivabili; aumentando così il numero di considerazioni che potevamo fare sulle funzioni sfruttando la sola continuità. Le applicazioni dello studio di funzione è, chiaramente, qualcosa di indiscutibile: basti pensare, come esempio, che in molti casi consente di dimostrare l'unicità, in un dato intervallo in cui giace la $x$, di equazioni della forma $f(x) = 0$, sotto opportune ipotesi. 
 \section{Teorema di Fermat}
 \thm{Teorema di Fermat}{Sia $f(x)$ una funzione definita in un insieme $A \subset \mathbb{R}$ e sia $x_0$ un punto di massimo (o di minimo) relativo interno ad A. Se $f$ è derivabile in $x_0$ risulta che $f'(x_0)=0$}
 \begin{myproof}
@@ -586,8 +586,7 @@ Poiché si è supposto che $|h| < r$ allora il punto $x_0 + h$ è contenuto in $
 	\begin{cases}
 		\frac{f(x_0 + h) - f(x_0)}{h} \leq 0 \implies f'_{+}(x_0) = \lim\limits_{h \to 0^{+}} \frac{f(x_0 + h) - f(x_0)}{h} \leq 0 \\
 \frac{f(x_0 + h) - f(x_0)}{h} \geq 0 \implies f'_{-}(x_0) = \lim\limits_{h \to 0^{-}} \frac{f(x_0 + h) - f(x_0)}{h} \geq 0
-
-	\end{cases}
+\end{cases}
 \end{equation}
 Ne consegue la tesi, ovvero che:
 $$
